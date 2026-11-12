@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1424"/>
+      <stop offset="100%" stop-color="#050a12"/>
+    </linearGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae292"/>
+      <stop offset="45%" stop-color="#e5b045"/>
+      <stop offset="100%" stop-color="#b37618"/>
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)"/>
+  <rect x="4" y="4" width="504" height="504" rx="108" fill="none" stroke="url(#gold-grad)" stroke-width="6" stroke-opacity="0.45"/>
+  <rect x="14" y="14" width="484" height="484" rx="98" fill="none" stroke="url(#cyan-grad)" stroke-width="2" stroke-opacity="0.3"/>
+
+  <g id="hd-player-mark" filter="url(#soft-glow)">
+    <!-- Letra H -->
+    <path d="M 105 160 L 150 160 L 150 230 L 210 230 L 210 160 L 255 160 L 255 352 L 210 352 L 210 275 L 150 275 L 150 352 L 105 352 Z" fill="url(#gold-grad)" />
+
+    <!-- Letra D -->
+    <path d="M 275 160 L 355 160 C 405 160 435 195 435 256 C 435 317 405 352 355 352 L 275 352 Z M 320 205 L 320 307 L 348 307 C 375 307 390 288 390 256 C 390 224 375 205 348 205 Z" fill="url(#gold-grad)" />
+
+    <!-- Play Icon dentro de D -->
+    <polygon points="338,232 375,256 338,280" fill="url(#cyan-grad)" />
+  </g>
+</svg>
